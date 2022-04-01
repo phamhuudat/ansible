@@ -1,5 +1,8 @@
 - name: ansible-playbook
   hosts: aws-fontend
+  become: yes
+  become_user: root
+  become_method: sudo
   tasks:
    - name: setting git
      shell: sudo apt update 
