@@ -9,7 +9,7 @@
             sudo apt install git
             git --version
    - name: setting java
-     shell: sudo apt install default-jre
+     shell: sudo apt install default-jre -y
             java --version
   #  - name: create a file 
   #    command: touch /home/ubuntu/newfile
