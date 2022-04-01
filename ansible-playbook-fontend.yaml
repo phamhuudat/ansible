@@ -6,7 +6,7 @@
             sudo apt install git
             git --version
    - name: setting java
-     shell: sudo apt install openjdk-11-jdk-headless
+     shell: sudo apt install openjdk-11-jdk-headless -y
   #  - name: create a file 
   #    command: touch /home/ubuntu/newfile
   #  - name: create a new directory

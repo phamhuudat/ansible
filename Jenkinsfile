@@ -18,13 +18,13 @@ pipeline {
                 //sh "chmod 400 12011995Xmen.pem"
                 //sh "cat hosts"
                 //sh "cat ansible-playbook.yaml"
-                ansiblePlaybook become: true, becomeUser: 'ubuntu' ,installation: 'my_ansible', inventory: 'hosts', playbook: 'ansible-playbook-fontend.yaml'
+                ansiblePlaybook become: true, installation: 'my_ansible', inventory: 'hosts', playbook: 'ansible-playbook-fontend.yaml'
             }
         }
         stage('setting in backend'){
             steps{
                 echo "Run ansible backend"
-                ansiblePlaybook become: true, becomeUser: 'ubuntu', installation: 'my_ansible', inventory: 'hosts', playbook: 'ansible-playbook-backend.yaml'
+                ansiblePlaybook become: true, installation: 'my_ansible', inventory: 'hosts', playbook: 'ansible-playbook-backend.yaml'
             }
         }
         // stage('Run app'){
