@@ -6,12 +6,12 @@
   tasks:
    - name: setting git
      become: yes
-     shell: sudo apt update 
-            sudo apt install git
+     shell: apt update 
+            apt install git
             git --version
    - name: setting java
      become: yes
-     shell: sudo apt install default-jre -y
+     shell: apt install default-jre -y
             java --version
   #  - name: create a file 
   #    command: touch /home/ubuntu/newfile
