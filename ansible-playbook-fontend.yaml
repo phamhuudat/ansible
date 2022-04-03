@@ -11,8 +11,7 @@
              git --version
     - name: setting java
       become: yes
-      shell: apt install default-jre -y
-             java --version
+      command: apt install default-jre
   #  - name: create a file 
   #    command: touch /home/ubuntu/newfile
   #  - name: create a new directory
