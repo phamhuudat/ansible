@@ -5,10 +5,14 @@
   become_method: sudo
   tasks:
    - name: setting git
-     shell: apt update
-            apt install git
+     become: yes
+     shell: sudo apt update 
+            sudo apt install git
+            git --version
    - name: setting java
-     shell: apt install default-jre -y
+     become: yes
+     shell: sudo apt install default-jre -y
+            java --version
   #  - name: create a file 
   #    command: touch /home/ubuntu/newfile
   #  - name: create a new directory
