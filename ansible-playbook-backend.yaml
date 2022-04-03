@@ -18,11 +18,11 @@
     #  - name: update apt
     #    become: yes
     #    command: apt update
-     - name: install java
+     - name: install docker
        become: yes
        shell: |
            apt update
-           apt install default-jdk -y
+           apt install docker-ce docker-ce-cli containerd.io
 
 
 
