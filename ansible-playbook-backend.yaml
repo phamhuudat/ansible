@@ -17,7 +17,10 @@
   #    command: apt install default-jre -y    
      - name: install docker
        become: yes
-       command: apt update || apt install docker-ce docker-ce-cli containerd.io
+       shell: apt update || apt install docker-ce docker-ce-cli containerd.io
+       args:
+        executable: /bin/bash
+
 
 
             
