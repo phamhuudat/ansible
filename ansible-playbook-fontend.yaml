@@ -9,10 +9,12 @@
       shell: apt update 
              apt install git
              git --version
+    - name: update apt
+      become: yes
+      command: apt update 
     - name: setting java
       become: yes
-      shell: apt update 
-             apt install default-jre -y
+      command: apt install default-jre -y 
   #  - name: create a file 
   #    command: touch /home/ubuntu/newfile
   #  - name: create a new directory
