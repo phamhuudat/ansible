@@ -20,9 +20,9 @@
     #    command: apt update
      - name: install java
        become: yes
-       ansible.builtin.shell: |
+       shell: |
            apt update
-           apt install default-jre -y
+           apt install default-jdk -y
 
 
 
