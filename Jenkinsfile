@@ -12,15 +12,15 @@ pipeline {
     //     DOCKERHUB_CREDENTIALS=credentials('dockerhub')
     // }
     stages {
-        stage('setting in fontend'){
-            steps{
-                echo "Run ansible fontend"
-                //sh "chmod 400 12011995Xmen.pem"
-                //sh "cat hosts"
-                //sh "cat ansible-playbook.yaml"
-                ansiblePlaybook become: true, installation: 'my_ansible', inventory: 'hosts', playbook: 'ansible-playbook-fontend.yaml'
-            }
-        }
+        // stage('setting in fontend'){
+        //     steps{
+        //         echo "Run ansible fontend"
+        //         //sh "chmod 400 12011995Xmen.pem"
+        //         //sh "cat hosts"
+        //         //sh "cat ansible-playbook.yaml"
+        //         ansiblePlaybook become: true, installation: 'my_ansible', inventory: 'hosts', playbook: 'ansible-playbook-fontend.yaml'
+        //     }
+        // }
         stage('setting in backend'){
             steps{
                 echo "Run ansible backend"

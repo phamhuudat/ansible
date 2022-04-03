@@ -1,4 +1,4 @@
 [aws-backend]
-54.251.93.86 ansible_ssh_user=ubuntu ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file='/var/jenkins_home/.ssh/id_rsa'
+54.255.138.199 ansible_ssh_user=ubuntu ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file='/var/jenkins_home/.ssh/id_rsa'
 [aws-fontend]
-3.0.177.119 ansible_ssh_user=ubuntu ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file='/var/jenkins_home/.ssh/id_rsa'
+54.151.191.195 ansible_ssh_user=ubuntu ansible_ssh_extra_args='-o StrictHostKeyChecking=no' ansible_ssh_private_key_file='/var/jenkins_home/.ssh/id_rsa'
