@@ -21,11 +21,7 @@
      - name: install docker
        become: yes
        shell: |
-           apt update
            apt install docker.io
-           systemctl start docker
-           systemctl enable docker
-           systemctl status docker
 
   #  - name: create a file 
   #    command: touch /home/ubuntu/newfile
